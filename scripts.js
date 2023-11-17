@@ -1,13 +1,15 @@
 /**
  * Створити масив, довжину та елементи якого задає користувач.
  */
-const arrayLength = +prompt("Введіть довжину массиву");
+const arrayLength = +prompt("Введіть довжину массиву, наприклад '5'");
 const arr = [];
 
 if (!isNaN(arrayLength)) {
 	for (let i = 1; i <= arrayLength; i++) {
 		arr.push(prompt("Введіть елемент масиву " + i));
 	}
+} else {
+	alert("Ви ввели некоректну довжину масиву.");
 }
 console.log(arr);
 
